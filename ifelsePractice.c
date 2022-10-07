@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <float.h>
+#include <stdbool.h>
 
 int main(int argc, const char * argv[])
 {
@@ -25,6 +26,9 @@ int main(int argc, const char * argv[])
 	{
 		printf("You're an adult, you're free now!\n");
 	}
+
+	bool isInElementary = ((age == 12) || (age == 13));
+	printf("Are you in elementary? %d\n", isInElementary);
 
 	return 0;
 }
