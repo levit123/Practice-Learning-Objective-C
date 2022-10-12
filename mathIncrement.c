@@ -15,6 +15,14 @@ int main(int argc, const char * argv[])
 	//display. So it will display 2 in the console.
 	printf("++i = %d\n", ++i);
 
+	//adds 6 to the current value of "i", and assigns
+	//the result to "i". Because "i" is at 2 before this,
+	//this will result in "i" being 8.
+	printf("i += 6 is %d\n", i += 6);
+	//subtracts 3 from "i" and assigns the result to "i"
+	printf("i -= 3 is %d\n", i -= 3);
+	//multiplies "i" by 2 and assigns the result to "i"
+	printf("i *= 2 is %d\n", i *= 2);
 
 	return 0;
 }
