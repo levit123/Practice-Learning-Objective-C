@@ -27,8 +27,19 @@ int main(int argc, const char * argv[])
 		printf("You're an adult, you're free now!\n");
 	}
 
+	//determines if the user is in elementary or not.
+	//1 for true, 0 for false
 	bool isInElementary = ((age == 12) || (age == 13));
 	printf("Are you in elementary? %d\n", isInElementary);
+
+	printf("The opposite of true is: %d\n", (!true));
+
+	//uses the ternary operator "?" to determine if
+	//the user is in high school or not. If age is
+	//greater than 13, assign a value of 1. Otherwise,
+	//assign a value of 0
+	bool isInHighSchool = (age > 13 && age < 19) ? 1 : 0;
+	printf("Are you in high school? %d\n", isInHighSchool);
 
 	return 0;
 }
